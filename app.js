@@ -32,7 +32,7 @@ const fromDollarToYen = (dollar) => {
 
 const fromYenToPound = (yen) => {
     let resultado = yen / oneEuroIs.JPY * oneEuroIs.GBP
-    return resultado
+    return resultado 
 }
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound  };
 

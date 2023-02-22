@@ -1,5 +1,6 @@
 // importar la función sum del archivo app.js
-const { sum , fromEuroToDollar, fromDollarToYen , fromYenToPound} = require('./app.js');
+const { sum , fromEuroToDollar, fromDollarToYen, fromYenToPound} = require('./app.js');
+
 
 
 // comienza tu primera prueba
@@ -19,15 +20,14 @@ test("One euro should be 1.206 dollars", function(){
 })
 
 test("Five dollar should be 532.916 Yenes", function () {
-    const yenValue = fromDollarToYen(5)
     const expedtoYen = 5 / 1.2 * 127.9;
 
 
-    expect(fromDollarToYen(5)).toBe (expedtoYen);
+    expect(fromDollarToYen(5)).toBe(expedtoYen);
 })
 
 test ("Twelve thousand five hundred yens should be 78.186", function (){
-    const poundValue = fromDollarToYen(12500)
+
     const expectedGBP = 12500 / 127.9 * 0.8;
-    expect(fromDollarToYen(12500)).toBe (expectedGBP);
+    expect(fromYenToPound(12500)).toBe(expectedGBP);
 })
